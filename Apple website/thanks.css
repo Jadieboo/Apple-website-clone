@@ -3,7 +3,8 @@ body {
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    margin: 0;    
+    margin: 0;
+    overflow: hidden;
 }
 
 /* main header */
@@ -53,79 +54,44 @@ body {
     color: #FBFBFD;
 }
 
-/* ---content---- */
-
-.container {
-    background-color: #D4D4D4;
-    border-radius: 5%;
-    margin: 100px auto;
-    max-width: 40%;
-    justify-content: center;
-    align-items: center;
-}
-
+/* ----content---- */
 h1 {
-    padding: 20px;
-    padding-bottom: 0;
+    margin-top: 100px;
     text-align: center;
+    font-size: 150px;
+    text-transform: capitalize;
 }
 
-.my-form {
-    padding: 20px 25%;
-
+.shopping-bag {
+    display: flex;
+    justify-content: center;
 }
 
-.my-form .form-group {
-    padding-bottom: 15px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.my-form label{
-    display: block;
-}
 
-.my-form label.inline {
-    display: inline;
-}
-
-.my-form input[type="text"] {
-    padding: 8px;
-    width: 50%;
-}
-.my-form input[type="email"] {
-    padding: 8px;
-    width: 50%;
-}
-
-.my-form input[type="radio"] {
-    display: inline;
-}
-
-.my-form button {
-    background-color: #252526;
-    color: #FBFBFD;
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 10px 15px;
-    border: none;
-}
-
-/* mobile media */
+/* ----media query---- */
+/* mobile */
 @media screen and (max-width: 699px) {
-    .container {
-        background-color: #D4D4D4;
-        border-radius: 0%;
-        margin: 100px 0 0 0;
-        max-width: 100%;
-        text-align: left;
+    h1 {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 100px;
+        text-transform: capitalize;
+    }
+    
+    .shopping-bag {
+        display: flex;
+        justify-content: center;
     }
 
-    .my-form {
-        padding: 20px 5%;
-    }
+    
 }
 
 /* laptop/desktop media */
-
 @media screen and (min-width: 700px) {
     /* nav */
     #main-header {
@@ -138,7 +104,7 @@ h1 {
 
     .logo {
         font-size: 20px;
-    }    
+    }
 
-
+    
 }

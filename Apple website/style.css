@@ -58,10 +58,11 @@ body {
 /* main */
 
 /* showcase a */
-#showcase-a {
+#showcase-a { 
     max-width: 70%;
     margin: 100px auto 40px;
     text-align: center;
+   
 }
 
 #showcase-a h1 {
@@ -176,11 +177,20 @@ img {
 
 
 /* laptop/desktop media */
+@media screen and (min-width: 1800px) {
 
-@media screen and (min-width: 1200px) {
     .showcase-a-img {
         margin-left: 200px;
         margin-right: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+   
+
+    #showcase-a, #showcase-b {
+        max-width: 50%;
     }
 
    

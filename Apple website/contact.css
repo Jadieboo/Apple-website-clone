@@ -60,15 +60,13 @@ body {
     background-color: #D4D4D4;
     border-radius: 5%;
     margin: 100px auto;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
+    max-width: 40%;
 }
 
 .video {
+    display: block;
     margin: 0 auto;
     width: 60%;
-    justify-content: center;
     
 }
 
@@ -84,11 +82,12 @@ h2 {
     text-align: center;
 }
 .my-form {
-    padding: 20px;
+    padding: 20px 25%;
 }
 
 .my-form .form-group {
     padding-bottom: 15px;
+    
 }
 
 .my-form label{
@@ -97,6 +96,7 @@ h2 {
 
 .my-form label.inline {
     display: inline;
+
 }
 
 .my-form input[type="text"] {
@@ -119,9 +119,33 @@ h2 {
     margin-top: 20px;
     padding: 10px 15px;
     border: none;
+    
 }
 
+/* mobile media */
+@media screen and (max-width: 699px) {
+    .container {
+        background-color: #D4D4D4;
+        border-radius: 0%;
+        margin: 100px 0;
+        max-width: 100%;
+        text-align: left;
+    }
 
+    .my-form {
+        padding: 20px 5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        background-color: #D4D4D4;
+        border-radius: 5%;
+        margin: 100px auto;
+        max-width: 70%;
+        text-align: left;
+    }
+}
 
 
 /* laptop/desktop media */
@@ -139,4 +163,5 @@ h2 {
     .logo {
         font-size: 20px;
     }    
+
 }
