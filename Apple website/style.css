@@ -1,0 +1,205 @@
+body {
+    background-color: #FBFBFD;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* main header */
+#main-header {
+    background-color: #252526;
+    color: #FBFBFD;
+    width: 100%;
+    padding: 0px 10px;
+    top: 0;
+    position: fixed;
+    opacity: 99%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* nav */ 
+.logo {
+    position: relative;
+}
+
+#navbar {
+    justify-content: center;
+}
+
+#navbar ul {
+    display: inline;
+    list-style: none;
+    justify-content: center;
+}
+
+#navbar li {
+    display: inline;
+    text-transform: capitalize;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+#main-header a {
+    color: #D4D4D4;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+#main-header a:hover {
+    color: #FBFBFD;
+}
+
+
+
+/* main */
+
+/* showcase a */
+#showcase-a {
+    max-width: 70%;
+    margin: 100px auto 40px;
+    text-align: center;
+}
+
+#showcase-a h1 {
+    font-size: 50px;
+    font-weight: 640;
+    margin: 0;
+}
+  
+#showcase-a p {
+    font-size: 24px;
+    font-weight: 400;
+    word-spacing: -3px;
+    margin: 0 0 10px;
+}
+
+/* links */
+#showcase-a a {
+    color: #1F66E1;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-margin {
+    margin-right: 40px;
+}
+
+#showcase-a a:hover {
+    text-decoration: underline;
+}
+
+
+/* showcase b */
+#showcase-b {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#showcase-b p {
+    font-size: 24px;
+    font-weight: 450;
+    word-spacing: -3px;
+    margin: 0 0 10px;
+}
+
+/* links */
+#showcase-b a {
+    color: #1F66E1;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+#showcase-b a:hover {
+    text-decoration: underline;
+}
+
+/* headings */
+
+.b-headings h3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    position: relative;
+    top: 35px;
+    left: -2px;
+}
+
+.b-headings h2 {
+    display: inline;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+/* SE H2 text */
+.SE-border h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding: 0 2px 5px 0;
+}
+
+/* SE border */
+.SE-border {
+    display: inline;
+    border: 4px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+}
+
+/* showcase images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.showcase-a-img {
+    margin-top: 20px;
+}
+
+.showcase-b-img {
+    margin-top: 30px;
+}
+
+
+/* laptop/desktop media */
+
+@media screen and (min-width: 1200px) {
+    .showcase-a-img {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+   
+
+}
+
+@media screen and (min-width: 700px) {
+    #main-header {
+        justify-content: center;
+    }
+
+    #navbar li {
+        padding-left: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    
+    
+}

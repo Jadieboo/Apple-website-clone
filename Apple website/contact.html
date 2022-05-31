@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <title>Apple</title>
+    <link rel="icon" href="images/apple.ico">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html"><i class="fa-brands fa-apple logo"></i></a>
+        <nav id="navbar">
+            <ul>
+                <li><a href="products.html">products</li></a>
+                <li><a href="order.html">pre order</li></a>
+                <li><a href="contact.html">support</li></a>
+                <li><a href="https://www.apple.com/newsroom/" target="_blank">blog</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!----Main---->
+    <h1>Here to <span>support</span> you</h1>
+    <video src="media/Apple-Support.mp4" width="400px" height="340px" controls autoplay class="video"></video>
+
+
+
+    <main class="container">
+
+        <h2>Contact Us</h2>
+
+        <form action="/action.php" method="get" target="_blank" class="my-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="insurance">Have you checked our YouTube channel for support?</label>
+                <label for="insurance" class="inline">Yes</label>
+                <input type="radio" name="insurance" id="insurance" value="yes" checked="checked">
+                <label for="insurance" class="inline">No</label>
+                <input type="radio" name="insurance" id="insurance" value="yes">
+            </div>
+            
+            <div class="form-group">
+                <label for="contact">What would you like help with?</label>
+                <textarea name="contact" id="contact" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="button">Submit</button>
+            
+        </form> 
+    </main>
+
+    
+</body>
+</html>

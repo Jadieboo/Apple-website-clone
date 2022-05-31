@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="order.css">
+    <title>Apple</title>
+    <link rel="icon" href="images/apple.ico">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html"><i class="fa-brands fa-apple logo"></i></a>
+        <nav id="navbar">
+            <ul>
+                <li><a href="products.html">products</li></a>
+                <li><a href="order.html">pre order</li></a>
+                <li><a href="contact.html">support</li></a>
+                <li><a href="https://www.apple.com/newsroom/" target="_blank">blog</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!----Main---->
+
+
+
+    <main class="container">
+        <h1>Pre-order your products</h1>
+
+        <form action="/action.php" method="get" target="_blank" class="my-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="products">Pick your product</label>
+                <select name="products" id="products" required>
+                    <option value="iPhone-13">iPhone 13</option>
+                    <option value="iPhone-13-pro">iPhone 13 Pro</option>
+                    <option value="iPhonese">iPhone SE</option>
+                    <option value="iPad">iPad</option>
+                    <option value="iPad-air">iPad Air</option>
+                    <option value="iPad-pro-11">iPad Pro 11</option>
+                    <option value="Macbook">Mackbook Air</option>
+                    <option value="Macbook-pro-13">Mackbook Pro 13"</option>
+                    <option value="Macbook-pro-14">Mackbook Pro 14"</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="color">Choose your colour!</label>
+                <select name="color" id="color">
+                    <option value="Black">Black</option>
+                    <option value="Grey">Grey</option>
+                    <option value="White">White</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Rose-Gold">Rose Gold</option>
+                    <option value="Dark-Green">Dark Green</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Pink">Pink</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="insurance">Would you like to add Apple Care for £24.99?</label>
+                <label for="insurance" class="inline">Yes</label>
+                <input type="radio" name="insurance" id="insurance" value="yes" checked="checked">
+                <label for="insurance" class="inline">No</label>
+                <input type="radio" name="insurance" id="insurance" value="yes">
+            </div>
+
+            <button type="submit" class="button">Order</button>
+            
+        </form> 
+    </main>
+
+
+    
+</body>
+</html>
