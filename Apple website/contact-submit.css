@@ -55,15 +55,17 @@ body {
 
 /* ----content---- */
 h1 {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
-    font-size: 150px;
+    font-size: 50px;
     text-transform: capitalize;
+    padding: 0 10px;
 }
 
-.shopping-bag {
+.support {
     display: flex;
     justify-content: center;
+    margin-top: 70px;
 }
 
 img {
@@ -71,24 +73,6 @@ img {
     height: auto;
 }
 
-
-/* ----media query---- */
-/* mobile */
-@media screen and (max-width: 699px) {
-    h1 {
-        margin-top: 100px;
-        text-align: center;
-        font-size: 100px;
-        text-transform: capitalize;
-    }
-    
-    .shopping-bag {
-        display: flex;
-        justify-content: center;
-    }
-
-    
-}
 
 /* laptop/desktop media */
 @media screen and (min-width: 700px) {
@@ -105,5 +89,11 @@ img {
         font-size: 20px;
     }
 
-    
+    h1{
+        margin-top: 100px;
+    }
+
+    .support {
+        margin-top: 100px;
+    }   
 }
