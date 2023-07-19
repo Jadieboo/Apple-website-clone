@@ -1,3 +1,5 @@
+/* -----global----- */
+
 body {
     background-color: #FBFBFD;
     color: black;
@@ -6,9 +8,6 @@ body {
     margin: 0;
 }
 
-/* -----global----- */
-
-/* img */
 img {
     max-width: 100%;
     height: auto;
@@ -70,16 +69,18 @@ img {
 /* hero section */
 #showcase {
     margin-top: 40px;
-    min-height: 800px;
-    background: linear-gradient(rgba(37, 37, 38, 100), rgba(37,37,38,0.010)),
-                url(images/showcase-img-cut.png);
+    margin-bottom: 20px;
+     background: linear-gradient(rgba(37, 37, 38, 100), rgba(37,37,38,0.010)),
+                url(images/showcase-img-800.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
+    min-height: 25vh;
 }
 
 #showcase h1 {
+    display: inline;
     color: #FBFBFD;
     font-size: 36px;
     padding: 20px;
@@ -99,8 +100,12 @@ img {
     justify-content: center;
 }
 
+.gallery {
+    margin-top: 40px;
+} 
+
 .box {
-    margin: 10px;
+    margin: 20px 10px;
     padding: 10px;
     box-shadow: -1px 0 10px black;
     align-items: center;
@@ -109,21 +114,13 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
 /* -----media query----- */
 
 /* mobile media */
-@media screen and (max-width: 699px){
+/* @media screen and (max-width: 699px){
     
     
-}
+} */
 
 /* laptop/desktop media */
 @media screen and (min-width: 700px) {
@@ -141,20 +138,20 @@ img {
     .logo {
         font-size: 20px;
     }
-
     
     /* hero section */
-
     #showcase {
         margin-top: 40px;
         min-height: 800px;
         background: linear-gradient(rgba(37, 37, 38, 100), rgba(37,37,38,0.010)),
-        url(images/showcase-img-cut.png);
+        url(images/showcase-img-800.png);
         background-repeat: no-repeat;
-        background-position: 0px -170px;
+        background-position: center;
+        background-size: cover;
     }
 
     #showcase h1 {
+        align-self: flex-start;
         font-size: 36px;
         padding: 40px;
         text-align: left;
@@ -167,12 +164,47 @@ img {
         font-weight: 600;
     }
 
-
     /* product gallery */
-
     .gallery {
         display: flex;
         margin-top: 70px;
+    } 
+
+    .box {
+        margin: 10px;
+        padding: 10px;
+        box-shadow: -1px 0 10px black;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    /* hero section */
+    #showcase {
+        margin-top: 40px;
+        min-height: 800px;
+        background: linear-gradient(rgba(37, 37, 38, 100), rgba(37,37,38,0.010)),
+        url(images/showcase-img.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    #showcase h1 {
+        color: #FBFBFD;
+        font-size: 3rem;
+        padding: 60px;
+        text-align: right;
+    }
+    
+    #showcase .secondary {
+        color: #D4D4D4;
+        font-size: 2rem;
+        font-weight: 700;
     }
     
 }
